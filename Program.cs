@@ -1,7 +1,7 @@
-﻿using Design_Patterns.Singleton;
+﻿using Design_Patterns.Factory;
 
-CarLazyInit.GetInstance().InputValues(19, "matheus");
+var automovel = AutomovelFactory.GetAutomovel("Moto");
 
-CarLazyInit singleton = CarLazyInit.GetInstance();
-System.Console.WriteLine(singleton.MyName + " = " + singleton.MyNumber);
+System.Console.WriteLine(automovel.NumeroRodas); 
+
 
