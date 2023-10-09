@@ -1,0 +1,15 @@
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\bin\Debug\net7.0\Design-Patterns.exe
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\bin\Debug\net7.0\Design-Patterns.deps.json
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\bin\Debug\net7.0\Design-Patterns.runtimeconfig.json
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\bin\Debug\net7.0\Design-Patterns.dll
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\bin\Debug\net7.0\Design-Patterns.pdb
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.csproj.AssemblyReference.cache
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.AssemblyInfoInputs.cache
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.AssemblyInfo.cs
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.csproj.CoreCompileInputs.cache
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.dll
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\refint\Design-Patterns.dll
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.pdb
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\Design-Patterns.genruntimeconfig.cache
+C:\Users\mathe\OneDrive\Documentos\GitHub\Design-Patterns\obj\Debug\net7.0\ref\Design-Patterns.dll
