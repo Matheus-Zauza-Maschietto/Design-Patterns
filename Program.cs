@@ -1,7 +1,7 @@
-﻿using Design_Patterns.Factory;
+﻿using Design_Patterns.AbstractFactory;
 
-var automovel = AutomovelFactory.GetAutomovel("Moto");
+Moto automovel = (Moto)AutomovelFactory.GetAutomovel(new MotoFactory(), "Casual");
 
-System.Console.WriteLine(automovel.NumeroRodas); 
+System.Console.WriteLine(automovel.QuantidadeMotor); 
 
 
