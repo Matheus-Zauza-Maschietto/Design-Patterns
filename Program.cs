@@ -1,12 +1,14 @@
-﻿using Design_Patterns.Builder;
+﻿using Design_Patterns.Bridge;
 
-Carro c1 = new Carro.CarroBuilder(10, 5, Marcas.TESLA)
-                    .SetHasDirecaoHidraulica(true)
-                    .SetHasVidroEletrico(false)
-                    .Build();
+Celular celular = new();
+Aparelho aparelho = new (celular);
 
-System.Console.WriteLine(c1.Cavalos);
-System.Console.WriteLine(c1.HasDirecaoHidraulica);
-System.Console.WriteLine(c1.HasVidroEletrico);
-System.Console.WriteLine(c1.Portas);
-System.Console.WriteLine(c1.Marca); 
+aparelho.IniciamentoRapido();
+System.Console.WriteLine(celular.IsCelularAtInternet);
+System.Console.WriteLine(celular.IsCelularOn);
+System.Console.WriteLine(celular.IsCelularScreenOn);
+
+aparelho.ColocarEmStandBy();
+System.Console.WriteLine(celular.IsCelularAtInternet);
+System.Console.WriteLine(celular.IsCelularOn);
+System.Console.WriteLine(celular.IsCelularScreenOn);
