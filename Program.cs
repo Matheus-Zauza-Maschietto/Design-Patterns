@@ -1,14 +1,7 @@
-﻿using Design_Patterns.Bridge;
+﻿using Design_Patterns.Composite;
 
-Celular celular = new();
-Aparelho aparelho = new (celular);
-
-aparelho.IniciamentoRapido();
-System.Console.WriteLine(celular.IsCelularAtInternet);
-System.Console.WriteLine(celular.IsCelularOn);
-System.Console.WriteLine(celular.IsCelularScreenOn);
-
-aparelho.ColocarEmStandBy();
-System.Console.WriteLine(celular.IsCelularAtInternet);
-System.Console.WriteLine(celular.IsCelularOn);
-System.Console.WriteLine(celular.IsCelularScreenOn);
+Conjunto conjunto = new(new List<Numero>(){new (10), new (20)},
+                        new List<Conjunto>(){new (new List<Numero>(){new (10), new (20)}),
+                        new (new List<Numero>(){new (10), new (20)})}      
+                    );
+System.Console.WriteLine(conjunto.Somar());
