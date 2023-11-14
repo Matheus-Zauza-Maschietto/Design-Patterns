@@ -1,7 +1,11 @@
-﻿using Design_Patterns.Composite;
+﻿using Design_Patterns.Decorator;
 
-Conjunto conjunto = new(new List<Numero>(){new (10), new (20)},
-                        new List<Conjunto>(){new (new List<Numero>(){new (10), new (20)}),
-                        new (new List<Numero>(){new (10), new (20)})}      
-                    );
-System.Console.WriteLine(conjunto.Somar());
+ICoffee coffee = new Coffee();
+
+ICoffee baseDec = new CoffeeDecorator(coffee);
+
+CoffeeMilk milkDec = new CoffeeMilk(baseDec);
+
+CoffeeSugar sugarDec = new CoffeeSugar(milkDec);
+
+System.Console.WriteLine(sugarDec.Describe());
