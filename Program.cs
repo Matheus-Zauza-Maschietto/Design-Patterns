@@ -1,11 +1,10 @@
-﻿using Design_Patterns.Decorator;
+﻿using Design_Patterns.Proxy;
 
-ICoffee coffee = new Coffee();
+IComputador comp = new ComputadorProxy();
 
-ICoffee baseDec = new CoffeeDecorator(coffee);
-
-CoffeeMilk milkDec = new CoffeeMilk(baseDec);
-
-CoffeeSugar sugarDec = new CoffeeSugar(milkDec);
-
-System.Console.WriteLine(sugarDec.Describe());
+comp.Desligar();
+comp.Ligar();
+comp.AbrirNavegador();
+comp.AbrirNavegador();
+comp.FecharNavegador();
+comp.Desligar();
