@@ -1,10 +1,10 @@
-﻿using Design_Patterns.Proxy;
+﻿using Design_Patterns.Flyweight;
 
-IComputador comp = new ComputadorProxy();
+FlyweightFactory factory = new();
 
-comp.Desligar();
-comp.Ligar();
-comp.AbrirNavegador();
-comp.AbrirNavegador();
-comp.FecharNavegador();
-comp.Desligar();
+GeometricCalculator g1 = new("PI*R^2", factory.GetFlyweight("PI"));
+GeometricCalculator g2 = new("wdqd", factory.GetFlyweight("AUREA"));
+GeometricCalculator g3 = new("PI*R^2", factory.GetFlyweight("PI"));
+GeometricCalculator g4 = new("qwdqwd", factory.GetFlyweight("AUREA"));
+GeometricCalculator g5 = new("223*R^2", factory.GetFlyweight("AUREA"));
+factory.ShowCache();
