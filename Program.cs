@@ -1,9 +1,14 @@
-﻿using Design_Patterns.Decorator;
+﻿
 
-var decorator = new CoffeeDecorator(new Coffee());
+using Design_Patterns.ChainofResponsability;
 
-var milk = new CoffeeMilk(decorator);
+Login login = new ("matheus@gmail.com", "123312412416929", 21);
 
-var sugar = new CoffeeSugar(milk);
+IdadeValidator validaIdade = new ();
+EmailValidator validaEmail = new ();
+SenhaValidator validaSenha = new ();
 
-System.Console.WriteLine(sugar.());
+validaIdade.SetNext(validaEmail);
+validaEmail.SetNext(validaSenha);
+
+validaIdade.Execute(login); 
