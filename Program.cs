@@ -1,14 +1,21 @@
-﻿
+﻿using Design_Patterns.Iterator;
 
-using Design_Patterns.ChainofResponsability;
 
-Login login = new ("matheus@gmail.com", "123312412416929", 21);
+IterableCollection iterableCollection = new ConcreteCollection<string>(new (){"Olá", "Sou", "Uma", "Lista"}, new (){"Good", " Morning", "Im", "a", "Tree"});
 
-IdadeValidator validaIdade = new ();
-EmailValidator validaEmail = new ();
-SenhaValidator validaSenha = new ();
+Iterator iteratorList = iterableCollection.CreateListIterator();
 
-validaIdade.SetNext(validaEmail);
-validaEmail.SetNext(validaSenha);
+System.Console.WriteLine(iteratorList.GetNext());
+System.Console.WriteLine(iteratorList.GetNext());
+System.Console.WriteLine(iteratorList.GetNext());
+System.Console.WriteLine(iteratorList.GetNext());
+System.Console.WriteLine(iteratorList.HasMore());
 
-validaIdade.Execute(login); 
+Iterator iteratorTree = iterableCollection.CreateTreeIterator();
+
+System.Console.WriteLine(iteratorTree.GetNext());
+System.Console.WriteLine(iteratorTree.GetNext());
+System.Console.WriteLine(iteratorTree.GetNext());
+System.Console.WriteLine(iteratorTree.GetNext());
+System.Console.WriteLine(iteratorTree.GetNext());
+System.Console.WriteLine(iteratorTree.HasMore());
