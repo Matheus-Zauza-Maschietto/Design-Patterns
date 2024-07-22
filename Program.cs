@@ -21,19 +21,29 @@
 // System.Console.WriteLine(iteratorTree.HasMore());
 
 
-using Design_Patterns.Observer;
+// using Design_Patterns.Observer;
 
-IPublisher publisher = new Publisher();
-ISubscriber subscriber1 = new Subscriber();
-ISubscriber subscriber2 = new Subscriber();
-ISubscriber subscriber3 = new Subscriber();
+// IPublisher publisher = new Publisher();
+// ISubscriber subscriber1 = new Subscriber();
+// ISubscriber subscriber2 = new Subscriber();
+// ISubscriber subscriber3 = new Subscriber();
 
-publisher.Subscribe(subscriber1);
-publisher.Subscribe(subscriber2);
-publisher.Subscribe(subscriber3);
+// publisher.Subscribe(subscriber1);
+// publisher.Subscribe(subscriber2);
+// publisher.Subscribe(subscriber3);
 
-publisher.NotifySubscribers();
+// publisher.NotifySubscribers();
 
-publisher.Unsubscribe(subscriber3);
+// publisher.Unsubscribe(subscriber3);
 
-publisher.NotifySubscribers();
+// publisher.NotifySubscribers();
+
+using Design_Patterns.Strategy;
+
+Context context = new Context();
+ConsoleStrategy consoleStrategy = new ConsoleStrategy();
+BuilderStrategy builderStrategy = new BuilderStrategy();
+context.SetStrategy(consoleStrategy);
+context.ExecuteStrategy("Teste strategy console");
+context.SetStrategy(builderStrategy);
+context.ExecuteStrategy("Teste strategy builder");
