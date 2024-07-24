@@ -38,12 +38,25 @@
 
 // publisher.NotifySubscribers();
 
-using Design_Patterns.Strategy;
+// using Design_Patterns.Strategy;
 
-Context context = new Context();
-ConsoleStrategy consoleStrategy = new ConsoleStrategy();
-BuilderStrategy builderStrategy = new BuilderStrategy();
-context.SetStrategy(consoleStrategy);
-context.ExecuteStrategy("Teste strategy console");
-context.SetStrategy(builderStrategy);
-context.ExecuteStrategy("Teste strategy builder");
+// Context context = new Context();
+// ConsoleStrategy consoleStrategy = new ConsoleStrategy();
+// BuilderStrategy builderStrategy = new BuilderStrategy();
+// context.SetStrategy(consoleStrategy);
+// context.ExecuteStrategy("Teste strategy console");
+// context.SetStrategy(builderStrategy);
+// context.ExecuteStrategy("Teste strategy builder");
+
+using System.Security;
+using Design_Patterns.Visitor;
+
+IVisitor visitor = new Visitor();
+
+Car car = new Car("Fox");
+
+Truck truck = new Truck("Tanker");
+
+car.Accept(visitor);
+
+truck.Accept(visitor);
