@@ -1,0 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Design_Patterns.State;
+
+public interface IState
+{
+	void InserirMoeda();
+	void SelecionarMoeda();
+	void DispensarMoeda();
+}

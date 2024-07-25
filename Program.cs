@@ -61,10 +61,21 @@
 
 // truck.Accept(visitor);
 
-using Design_Patterns.TemplateMethod;
+// using Design_Patterns.TemplateMethod;
 
-RelatorioJson relatorioJson = new RelatorioJson();
-RelatorioCSV relatorioCSV = new RelatorioCSV();
+// RelatorioJson relatorioJson = new RelatorioJson();
+// RelatorioCSV relatorioCSV = new RelatorioCSV();
 
-relatorioCSV.TemplateMethod();
-relatorioJson.TemplateMethod();
+// relatorioCSV.TemplateMethod();
+// relatorioJson.TemplateMethod();
+
+// using Design_Patterns.State;
+
+// Context context = new ();
+
+// context.InserirMoeda();
+// context.DispensarMoeda();
+// context.SelecionarMoeda();
+// context.InserirMoeda();
+// context.SelecionarMoeda();
+// context.DispensarMoeda();
