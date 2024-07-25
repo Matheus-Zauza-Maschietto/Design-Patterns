@@ -48,15 +48,23 @@
 // context.SetStrategy(builderStrategy);
 // context.ExecuteStrategy("Teste strategy builder");
 
-using System.Security;
-using Design_Patterns.Visitor;
+// using System.Security;
+// using Design_Patterns.Visitor;
 
-IVisitor visitor = new Visitor();
+// IVisitor visitor = new Visitor();
 
-Car car = new Car("Fox");
+// Car car = new Car("Fox");
 
-Truck truck = new Truck("Tanker");
+// Truck truck = new Truck("Tanker");
 
-car.Accept(visitor);
+// car.Accept(visitor);
 
-truck.Accept(visitor);
+// truck.Accept(visitor);
+
+using Design_Patterns.TemplateMethod;
+
+RelatorioJson relatorioJson = new RelatorioJson();
+RelatorioCSV relatorioCSV = new RelatorioCSV();
+
+relatorioCSV.TemplateMethod();
+relatorioJson.TemplateMethod();
