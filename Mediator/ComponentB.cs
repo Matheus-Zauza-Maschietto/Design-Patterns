@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Design_Patterns.Mediator;
+public  class ComponentB : BaseComponent
+{
+    public void DoC()
+    {
+        Console.WriteLine("Component 2 does C.");
+
+        this._mediator?.Notify(this, "C");
+    }
+
+    public void DoD()
+    {
+        Console.WriteLine("Component 2 does D.");
+
+        this._mediator?.Notify(this, "D");
+    }
+}
