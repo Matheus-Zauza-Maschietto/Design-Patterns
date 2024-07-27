@@ -79,3 +79,21 @@
 // context.InserirMoeda();
 // context.SelecionarMoeda();
 // context.DispensarMoeda();
+
+using Design_Patterns.Memento;
+
+Originator originator = new Originator("Lorem ipsum");
+
+Caretaker caretaker = new Caretaker(originator);
+
+caretaker.History.Add(originator.Save());
+
+originator.SetNewState("Novo estado 😎😎😎😎");
+
+caretaker.History.Add(originator.Save());
+
+System.Console.WriteLine(originator.State);
+
+caretaker.Undo();
+
+System.Console.WriteLine(originator.State);
